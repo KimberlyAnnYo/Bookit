@@ -20,7 +20,9 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  
+  h1 {
+    font-size: 20px;
+  }
   .description{
     white-space: pre-wrap;
   }
@@ -43,7 +45,7 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: gray;
     color: white;
   }
   
@@ -64,8 +66,21 @@ body {
     background-color: #06AED5;
     color: white;
   }
-  
-  .saveBtn i:hover {
+  .deleteBtn {
+    border-left: 1px solid blue;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: slateblue;
+    color: white;
+  }
+  .saveBtn, .completeBtn, .deleteBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+  .complete {
+    text-decoration: line-through !important;
+  }
+
+  .far {
+    font-size: 200%;
   }

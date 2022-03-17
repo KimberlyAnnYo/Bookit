@@ -8,3 +8,15 @@ var createTask = function(taskText, taskDate, taskList) {
       .addClass("m-1")
       .text(taskText);
 }  
+
+//moment script
+
+var m = moment();
+
+//date and time
+$("#currentDay").text(moment().format("LLLL"));
+
+$(document).ready(function() {
+    colorChange();
+    WebGL2RenderingContext();
+});
